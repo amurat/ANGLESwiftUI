@@ -17,8 +17,7 @@ import UIKit
 #if os(macOS)
 enum DisplayLink {
     case cv(CVDisplayLink)
-    @available(macOS 14.0, *)
-    case ca(CADisplayLink)
+    case ca(NSObject)
 }
 
 typealias PlatformView = NSView
